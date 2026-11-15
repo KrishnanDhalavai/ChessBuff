@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+  body {
+    background-color: #302E2B;
+    color: #E2E8F0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Chess.com 3D Button Utility */
+.chess-btn-green {
+  background-color: #81B64C;
+  border-bottom: 4px solid #457524;
+  transition: all 0.08s ease-in-out;
+}
+.chess-btn-green:hover {
+  background-color: #95C85A;
+}
+.chess-btn-green:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+
+.chess-btn-gray {
+  background-color: #3d3b37;
+  border-bottom: 4px solid #2b2927;
+  transition: all 0.08s ease-in-out;
+}
+.chess-btn-gray:hover {
+  background-color: #4a4742;
+}
+.chess-btn-gray:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+
+/* Custom Scrollbar for Move List */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #262421;
+}
+::-webkit-scrollbar-thumb {
+  background: #403D39;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A5650;
+}
